@@ -1,0 +1,67 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "🚀 Lancer Portfolio",
+            "type": "shell",
+            "command": "python -m http.server 3000",
+            "group": "build",
+            "isBackground": true,
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": [],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "detail": "Lance le portfolio sur http://localhost:3000"
+        },
+        {
+            "label": "🌐 Ouvrir dans le navigateur",
+            "type": "shell",
+            "command": "start http://localhost:3000",
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared"
+            },
+            "dependsOn": "🚀 Lancer Portfolio",
+            "detail": "Ouvre le portfolio dans le navigateur par défaut"
+        },
+        {
+            "label": "📱 Test Responsive",
+            "type": "shell",
+            "command": "echo '🔍 Testez le portfolio sur différentes tailles d\\'écran:' && echo '📱 Mobile: http://localhost:3000?mobile' && echo '📱 Tablette: http://localhost:3000?tablet' && echo '💻 Desktop: http://localhost:3000' && python -m http.server 3000",
+            "group": "test",
+            "isBackground": true,
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "new"
+            },
+            "detail": "Lance le serveur avec instructions pour tester le responsive"
+        },
+        {
+            "label": "🎨 Mode Développement",
+            "type": "shell",
+            "command": "echo '🛠️ Mode développement activé' && echo '✨ Fonctionnalités debug disponibles:' && echo '- Bouton reset animations' && echo '- Console logs détaillés' && echo '- Hot reload des styles' && python -m http.server 3000",
+            "group": "build",
+            "isBackground": true,
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "new"
+            },
+            "detail": "Lance le portfolio en mode développement avec outils de debug"
+        }
+    ]
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Envoyé - Carl Smith ETIENNE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="thank-you-page">
+        <div class="container">
+            <div class="thank-you-content">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h1>Message Envoyé avec Succès !</h1>
+                <p>Merci pour votre message. Je vous répondrai dans les plus brefs délais.</p>
+                <div class="thank-you-buttons">
+                    <a href="/" class="btn btn-primary">
+                        <i class="fas fa-home"></i>
+                        Retour au Portfolio
+                    </a>
+                    <a href="/#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Envoyer un Autre Message
+                    </a>
+                </div>
+                <div class="contact-reminder">
+                    <h3>Autres moyens de me contacter :</h3>
+                    <div class="contact-links">
+                        <a href="mailto:carlsmithetienne2000@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            carlsmithetienne2000@gmail.com
+                        </a>
+                        <a href="tel:+50936787853" class="contact-link">
+                            <i class="fas fa-phone"></i>
+                            +509 36 78 78 53
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .thank-you-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            padding: 2rem;
+        }
+
+        .thank-you-content {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: var(--shadow-xl);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .success-icon {
+            font-size: 4rem;
+            color: #22c55e;
+            margin-bottom: 1.5rem;
+        }
+
+        .thank-you-content h1 {
+            color: var(--gray-800);
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .thank-you-content p {
+            color: var(--gray-600);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .thank-you-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-reminder {
+            border-top: 1px solid var(--gray-200);
+            padding-top: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-reminder h3 {
+            color: var(--gray-700);
+            margin-bottom: 1rem;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .contact-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color var(--transition-normal);
+        }
+
+        .contact-link:hover {
+            color: var(--primary-dark);
+        }
+
+        @media (max-width: 600px) {
+            .thank-you-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 250px;
+                justify-content: center;
+            }
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,5 @@
+# Redirections Netlify
+/thank-you /thank-you.html 200
+
+# Redirection par défaut pour SPA (si nécessaire)
+/*    /index.html   200

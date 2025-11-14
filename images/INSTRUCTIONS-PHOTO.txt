@@ -1,0 +1,15 @@
+INSTRUCTIONS POUR AJOUTER VOTRE PHOTO
+=====================================
+
+1. Copiez la photo que vous avez dans les attachments
+2. Collez-la dans ce dossier : 
+   c:\Users\Service Transport\portfolio Smith\images\
+3. Renommez-la exactement en : carl-profile.jpg
+
+Votre photo remplacera automatiquement :
+- L'image dans la section héros (bannière principale)
+- L'image dans la section "À propos"
+
+Formats acceptés : .jpg, .jpeg, .png, .webp
+
+Une fois ajoutée, rechargez la page : http://127.0.0.1:3000
