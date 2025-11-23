@@ -334,28 +334,18 @@ function initContactForm() {
     
     if (form) {
         form.addEventListener('submit', (e) => {
-            e.preventDefault();
+            // Ne pas empêcher la soumission - laisser Formspree traiter
+            // e.preventDefault(); // COMMENTÉ POUR PERMETTRE L'ENVOI RÉEL
             
-            // Simulation d'envoi
+            // Afficher un indicateur de chargement uniquement
             const button = form.querySelector('button[type="submit"]');
             const originalText = button.innerHTML;
             
             button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
             button.disabled = true;
             
-            // Simulation du temps d'envoi
-            setTimeout(() => {
-                button.innerHTML = '<i class="fas fa-check"></i> Message envoyé !';
-                button.style.background = 'linear-gradient(135deg, #48bb78 0%, #38a169 100%)';
-                
-                // Reset du formulaire
-                setTimeout(() => {
-                    form.reset();
-                    button.innerHTML = originalText;
-                    button.disabled = false;
-                    button.style.background = '';
-                }, 3000);
-            }, 2000);
+            // Le formulaire sera soumis à Formspree automatiquement
+            // La redirection vers thank-you.html se fera via _next
         });
         
         // Animation des labels flottants
