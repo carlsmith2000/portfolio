@@ -554,10 +554,12 @@
                 </div>
                 <div class="contact-form">
                     <form id="contact-form" action="https://formspree.io/f/xeodyjnd" method="POST">
-                        <!-- Champ anti-spam caché -->
-                        <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
+                        <!-- Configuration Formspree pour email -->
+                        <input type="hidden" name="_subject" value="📧 Nouveau message depuis votre portfolio">
                         <input type="hidden" name="_next" value="https://carlsmith2000.github.io/portfolio/thank-you.html">
-                        <input type="hidden" name="_cc" value="carlsmithetienne2000@gmail.com">
+                        <input type="hidden" name="_replyto" value="carlsmithetienne2000@gmail.com">
+                        <input type="hidden" name="_format" value="plain">
+                        <input type="hidden" name="_language" value="fr">
                         
                         <div class="form-group">
                             <input type="text" id="name" name="name" placeholder="Votre nom" required>
