@@ -3,17 +3,20 @@
 Portfolio professionnel de développeur Full Stack - Carl Smith ETIENNE
 
 ## 🚀 Démonstration Live
+
 [Voir le Portfolio](https://VOTRE-USERNAME.github.io/VOTRE-REPO)
 
 ## 📱 Fonctionnalités
 
 ### ✨ Design Moderne
+
 - Interface élégante et professionnelle
 - Animations fluides et interactives
 - Mode sombre/clair avec bouton de bascule
 - Design 100% responsive (mobile, tablette, desktop)
 
 ### 🎯 Sections Complètes
+
 - **Accueil** : Présentation avec effet de frappe
 - **À propos** : Expérience et statistiques animées
 - **Compétences** : Barres de progression dynamiques
@@ -22,6 +25,7 @@ Portfolio professionnel de développeur Full Stack - Carl Smith ETIENNE
 - **Contact** : Formulaire fonctionnel avec Formspree
 
 ### 🛠️ Technologies Utilisées
+
 - **HTML5** : Structure sémantique
 - **CSS3** : Styles modernes, Grid, Flexbox, Variables CSS
 - **JavaScript ES6+** : Interactivité et animations
@@ -29,6 +33,7 @@ Portfolio professionnel de développeur Full Stack - Carl Smith ETIENNE
 - **Google Fonts** : Typographie Poppins
 
 ### 📧 Formulaire de Contact
+
 - Intégration **Formspree** pour GitHub Pages
 - Messages reçus directement par email
 - Page de remerciement après envoi
@@ -37,17 +42,20 @@ Portfolio professionnel de développeur Full Stack - Carl Smith ETIENNE
 ## 🎨 Fonctionnalités Avancées
 
 ### 🌙 Mode Sombre
+
 - Basculement instantané clair/sombre
 - Sauvegarde de la préférence utilisateur
 - Transitions fluides entre les thèmes
 
 ### 📊 Animations
+
 - Barres de progression animées au scroll
 - Compteurs numériques animés
 - Effet de frappe pour le titre
 - Animations d'apparition au défilement
 
 ### 📱 Responsive Design
+
 - Optimisé pour tous les écrans
 - Menu hamburger sur mobile
 - Grilles adaptatives
@@ -56,12 +64,14 @@ Portfolio professionnel de développeur Full Stack - Carl Smith ETIENNE
 ## 🚀 Installation Locale
 
 1. **Cloner le repository :**
+
 ```bash
 git clone https://github.com/VOTRE-USERNAME/VOTRE-REPO.git
 cd VOTRE-REPO
 ```
 
 2. **Lancer un serveur local :**
+
 ```bash
 # Python 3
 python -m http.server 3000
@@ -71,6 +81,7 @@ npx serve .
 ```
 
 3. **Ouvrir dans le navigateur :**
+
 ```
 http://localhost:3000
 ```
@@ -98,12 +109,14 @@ portfolio/
 ## ⚙️ Configuration
 
 ### Formulaire de Contact
+
 1. Créer un compte sur [Formspree.io](https://formspree.io)
 2. Créer un nouveau formulaire
 3. Remplacer `YOUR_FORM_ID` dans `index.html`
 4. Confirmer votre email Formspree
 
 ### Personnalisation
+
 - **Couleurs** : Modifier les variables CSS dans `styles.css`
 - **Contenu** : Éditer les textes dans `index.html`
 - **Images** : Remplacer les fichiers dans `/images`
@@ -124,4 +137,5 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 Merci d'avoir visité mon portfolio ! N'hésitez pas à me contacter pour des opportunités de collaboration.
 
 ---
+
 ⭐ **Si ce portfolio vous plaît, n'hésitez pas à le ⭐ étoiler !**

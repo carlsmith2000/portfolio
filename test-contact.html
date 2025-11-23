@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Contact - Carl Smith ETIENNE</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 2rem; max-width: 600px; margin: 0 auto; }
+        .test-form { background: #f5f5f5; padding: 2rem; border-radius: 10px; }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; }
+        button { background: #667eea; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; }
+        .contact-methods { margin-top: 2rem; }
+        .contact-methods a { display: block; color: #667eea; text-decoration: none; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <h1>🧪 Test Formulaire Contact</h1>
+    
+    <div class="test-form">
+        <h2>Méthode 1 : Email Direct</h2>
+        <p>Cliquez sur ce bouton pour ouvrir votre client email :</p>
+        <a href="mailto:carlsmithetienne2000@gmail.com?subject=Test depuis portfolio&body=Bonjour Carl, voici un test de contact depuis votre portfolio." 
+           style="background: #667eea; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+            📧 Envoyer Email Direct
+        </a>
+    </div>
+
+    <div class="test-form" style="margin-top: 2rem;">
+        <h2>Méthode 2 : Formulaire Test</h2>
+        <form action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <input type="text" name="subject" placeholder="Sujet" required>
+            <textarea name="message" placeholder="Votre message" rows="4" required></textarea>
+            <button type="submit">🚀 Tester Formspree</button>
+        </form>
+    </div>
+
+    <div class="contact-methods">
+        <h2>📞 Autres Moyens de Contact</h2>
+        <a href="mailto:carlsmithetienne2000@gmail.com">✉️ carlsmithetienne2000@gmail.com</a>
+        <a href="tel:+50936787853">📱 +509 36 78 78 53</a>
+        <a href="https://carlsmith2000.github.io/portfolio">🌐 Portfolio Principal</a>
+    </div>
+
+    <div style="margin-top: 2rem; padding: 1rem; background: #fff3cd; border-left: 4px solid #ffc107;">
+        <h3>🔧 Instructions Configuration</h3>
+        <ol>
+            <li>Créer compte Formspree.io</li>
+            <li>Créer un formulaire</li>
+            <li>Remplacer "VOTRE_ID_FORMSPREE" par la vraie ID</li>
+            <li>Vérifier emails + dossier spam</li>
+        </ol>
+    </div>
+</body>
+</html>

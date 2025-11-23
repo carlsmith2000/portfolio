@@ -1,6 +1,7 @@
 # 🚀 Guide Déploiement GitHub Pages - Portfolio Carl Smith ETIENNE
 
 ## 📋 Ce dont vous avez besoin :
+
 - Un compte GitHub (gratuit)
 - Vos fichiers de portfolio prêts
 - 10 minutes de votre temps ! ⏰
@@ -18,12 +19,14 @@
 ### 2. 📁 Upload vos fichiers
 
 **Option A - Interface Web (Plus Facile) :**
+
 1. **Cliquez** "uploading an existing file"
 2. **Glissez tous vos fichiers** du portfolio dans la zone
 3. **Écrivez un message** : "Initial portfolio upload"
 4. **Cliquez** "Commit changes"
 
 **Fichiers à uploader :**
+
 ```
 portfolio Smith/
 ├── index.html
@@ -60,8 +63,13 @@ portfolio Smith/
 5. **Remplacez** `YOUR_FORM_ID` dans votre `index.html`
 
 **📝 Exemple de remplacement :**
+
 ```html
-<form id="contact-form" action="https://formspree.io/f/xzbqpwer" method="POST">
+<form
+  id="contact-form"
+  action="https://formspree.io/f/xzbqpwer"
+  method="POST"
+></form>
 ```
 
 ### 5. ✅ Finaliser
@@ -73,12 +81,15 @@ portfolio Smith/
 ## 🎉 Votre Portfolio Sera En Ligne !
 
 ### 📱 URL de votre site :
+
 ```
 https://VOTRE-USERNAME.github.io/VOTRE-REPO
 ```
-*Remplacez par vos vraies informations*
+
+_Remplacez par vos vraies informations_
 
 ### 📧 Messages du formulaire :
+
 - ✅ Arriveront dans votre email Formspree
 - ✅ Visiteur redirigé vers page de remerciement
 - ✅ Totalement gratuit (1000 messages/mois)
@@ -92,6 +103,7 @@ https://VOTRE-USERNAME.github.io/VOTRE-REPO
 3. **Personnalisez les messages de confirmation**
 
 ### Options Formspree Gratuites :
+
 - 🆓 **1000 soumissions/mois**
 - 📊 **Tableau de bord**
 - 🛡️ **Protection spam**
@@ -100,9 +112,13 @@ https://VOTRE-USERNAME.github.io/VOTRE-REPO
 ## 🚀 Avantages GitHub Pages
 
 ### ✅ **Gratuit à vie**
+
 ### ✅ **Domaine personnalisé possible**
+
 ### ✅ **SSL automatique (https)**
+
 ### ✅ **Mises à jour automatiques**
+
 ### ✅ **Sauvegarde sécurisée**
 
 ## 📝 Étapes Résumées
@@ -118,12 +134,13 @@ https://VOTRE-USERNAME.github.io/VOTRE-REPO
 ## 🆘 Aide
 
 Si vous avez des questions :
+
 1. **Formspree ne fonctionne pas** → Vérifiez l'URL dans le formulaire
 2. **Site pas accessible** → Attendez 5-10 minutes après activation
 3. **Images ne s'affichent pas** → Vérifiez les chemins dans `images/`
 
 ## 🎊 Félicitations !
 
-Votre portfolio sera bientôt en ligne et professionnel ! 
+Votre portfolio sera bientôt en ligne et professionnel !
 
 **GitHub Pages + Formspree = Solution parfaite pour votre portfolio ! 🚀**
