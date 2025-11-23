@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test GitHub Pages - Carl Smith</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 2rem; max-width: 800px; margin: 0 auto; }
+        .success { color: green; background: #d4edda; padding: 1rem; border-radius: 5px; margin: 10px 0; }
+        .info { background: #e3f2fd; padding: 1rem; border-radius: 5px; margin: 10px 0; }
+        .links a { display: block; margin: 5px 0; color: #007bff; }
+    </style>
+</head>
+<body>
+    <h1>🧪 Test GitHub Pages</h1>
+    
+    <div class="success">
+        ✅ Cette page se charge = GitHub Pages fonctionne !
+    </div>
+    
+    <div class="info">
+        <h3>📋 Informations</h3>
+        <p><strong>Date/Heure :</strong> <span id="datetime"></span></p>
+        <p><strong>URL Actuelle :</strong> <span id="current-url"></span></p>
+        <p><strong>User Agent :</strong> <span id="user-agent"></span></p>
+    </div>
+    
+    <div class="links">
+        <h3>🔗 Liens de Test</h3>
+        <a href="index.html">→ index.html (relatif)</a>
+        <a href="/portfolio/">→ /portfolio/ (racine)</a>
+        <a href="/portfolio/index.html">→ /portfolio/index.html (explicite)</a>
+        <a href="https://carlsmith2000.github.io/portfolio/">→ URL complète</a>
+        <a href="css/styles.css">→ Test CSS</a>
+        <a href="images/carl-profile.png">→ Test Image</a>
+    </div>
+    
+    <div class="info">
+        <h3>📧 Si cette page fonctionne mais pas le portfolio :</h3>
+        <ol>
+            <li>Vider le cache du navigateur (Ctrl+F5)</li>
+            <li>Essayer en navigation privée</li>
+            <li>Attendre 5 minutes et réessayer</li>
+            <li>Vérifier les paramètres GitHub Pages</li>
+        </ol>
+    </div>
+    
+    <script>
+        document.getElementById('datetime').textContent = new Date().toLocaleString();
+        document.getElementById('current-url').textContent = window.location.href;
+        document.getElementById('user-agent').textContent = navigator.userAgent;
+    </script>
+</body>
+</html>
