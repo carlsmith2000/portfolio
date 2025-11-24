@@ -344,8 +344,17 @@ function initContactForm() {
             button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
             button.disabled = true;
             
+            // Solution de backup pour la redirection
+            setTimeout(() => {
+                // Si après 3 secondes on est toujours sur la page,
+                // rediriger manuellement (cas où Formspree ne redirige pas)
+                if (window.location.href.includes('formspree.io')) {
+                    window.location.href = 'https://carlsmith2000.github.io/portfolio/thank-you.html';
+                }
+            }, 3000);
+            
             // Le formulaire sera soumis à Formspree automatiquement
-            // La redirection vers thank-you.html se fera via _next
+            // La redirection vers thank-you.html se fera via _redirect
         });
         
         // Animation des labels flottants
