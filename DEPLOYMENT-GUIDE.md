@@ -57,15 +57,6 @@ Configuration des en-têtes de sécurité et cache
 ### 🔀 `_redirects`
 Gestion des redirections
 
-## 🎯 Test du Formulaire
-
-### Après déploiement :
-1. Visitez votre site hébergé
-2. Remplissez le formulaire de contact
-3. Cliquez "Envoyer le message"
-4. Vous devriez voir la page de remerciement
-5. Vérifiez votre email pour la notification
-
 ## 📱 Réponse à votre Question
 
 **"Est-ce que si j'écris un message après hébergement ça va aller ?"**
@@ -83,6 +74,6 @@ Une fois hébergé sur Netlify :
 1. **Commitez tous les fichiers** dans votre repository
 2. **Poussez sur GitHub** 
 3. **Déployez sur Netlify**
-4. **Testez le formulaire** sur le site live
+4. **Vérifiez le formulaire** sur le site live
 
 Votre portfolio sera alors 100% fonctionnel avec un système de contact professionnel ! 🎉
