@@ -204,7 +204,7 @@ function initScrollAnimations() {
                 
                 if (entry.target.classList.contains('skills')) {
                     setTimeout(() => {
-                        animateSkillBars();
+                        animateSkillIcons();
                     }, 300);
                 }
             }
@@ -212,7 +212,7 @@ function initScrollAnimations() {
     }, observerOptions);
     
     // Observer les éléments
-    const animatedElements = document.querySelectorAll('.skill-item, .timeline-item, .project-card, section');
+    const animatedElements = document.querySelectorAll('.skill-icon-item, .timeline-item, .project-card, section');
     animatedElements.forEach(el => observer.observe(el));
 }
 
@@ -245,58 +245,39 @@ function animateStats() {
 }
 
 // =============================================
-// ANIMATION DES BARRES DE COMPÉTENCES
+// ANIMATION DES ICÔNES DE COMPÉTENCES
 // =============================================
 
-function animateSkillBars() {
-    const skillProgresses = document.querySelectorAll('.skill-progress');
+function animateSkillIcons() {
+    const skillIcons = document.querySelectorAll('.skill-icon-item');
     
-    skillProgresses.forEach((progress, index) => {
-        const targetWidth = progress.getAttribute('data-width');
-        if (!targetWidth) return;
-        
+    skillIcons.forEach((icon, index) => {
         // Délai échelonné pour un effet cascade
         setTimeout(() => {
-            // Ajout de la classe d'animation
-            progress.classList.add('animate');
+            // Animation d'apparition
+            icon.style.opacity = '0';
+            icon.style.transform = 'translateY(30px) scale(0.8)';
+            icon.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
             
-            // Animation de la largeur
-            progress.style.width = targetWidth + '%';
+            // Animation d'entrée
+            requestAnimationFrame(() => {
+                icon.style.opacity = '1';
+                icon.style.transform = 'translateY(0) scale(1)';
+            });
             
-            // Compteur numérique pour le pourcentage
-            animatePercentageCounter(progress, targetWidth);
+            // Effet de rebond sur l'icône
+            const iconElement = icon.querySelector('.skill-icon');
+            if (iconElement) {
+                setTimeout(() => {
+                    iconElement.style.transform = 'scale(1.2)';
+                    setTimeout(() => {
+                        iconElement.style.transform = 'scale(1)';
+                    }, 200);
+                }, 300);
+            }
             
-        }, index * 150); // Délai de 150ms entre chaque barre
+        }, index * 100); // Délai de 100ms entre chaque icône
     });
-}
-
-function animatePercentageCounter(progressBar, targetValue) {
-    const skillItem = progressBar.closest('.skill-item');
-    const percentageElement = skillItem ? skillItem.querySelector('.skill-percentage') : null;
-    
-    if (!percentageElement) return;
-    
-    let currentValue = 0;
-    const increment = targetValue / 60; // 60 frames pour 1 seconde à 60fps
-    const duration = 2000; // 2 secondes
-    const intervalTime = duration / 60;
-    
-    const counter = setInterval(() => {
-        currentValue += increment;
-        
-        if (currentValue >= targetValue) {
-            currentValue = targetValue;
-            clearInterval(counter);
-            
-            // Effet de "pop" à la fin
-            percentageElement.style.transform = 'scale(1.1)';
-            setTimeout(() => {
-                percentageElement.style.transform = 'scale(1)';
-            }, 200);
-        }
-        
-        percentageElement.textContent = Math.round(currentValue) + '%';
-    }, intervalTime);
 }
 
 // =============================================
