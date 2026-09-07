@@ -4,7 +4,7 @@ Portfolio professionnel de développeur Full Stack - Carl Smith ETIENNE
 
 ## 🚀 Démonstration Live
 
-[Voir le Portfolio](https://carlsmith2000.github.io/VOTRE-REPO)
+[Voir le Portfolio](https://carlsmith2000.github.io/portfolio)
 
 ## 📱 Fonctionnalités
 
